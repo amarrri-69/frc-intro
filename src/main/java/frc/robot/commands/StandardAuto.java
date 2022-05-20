@@ -48,6 +48,35 @@ public class StandardAuto extends SequentialCommandGroup {
             ),
             // Turn robot by 90 degrees
             new TurnByAngle(drivetrain, 90.0)
+            
+            
+            /*
+            new ParallelRaceGroup(
+                new RunCommand(()-> drivetrain.drive(0.69, 0)),
+                new WaitCommand(2.0)    
+            ),
+          
+            new ParallelRaceGroup(
+                new RunCommand(()-> drivetrain.drive(0, 0.69)),
+                new WaitCommand(2.0)
+            ),
+
+            new ParallelRaceGroup(
+                new RunCommand(()-> drivetrain.drive(0.69, 0)),
+                new WaitCommand(2.0)
+            ),
+
+            new ParallelRaceGroup(
+                new RunCommand(()-> drivetrain.drive(0, 0.69)),
+                new WaitCommand(2.0)
+            ),
+
+            new ParallelRaceGroup(
+                new RunCommand(()-> drivetrain.drive(0.69, 0)),
+                new WaitCommand(2.0)
+          )
+          */
+            
         );
 
         addRequirements(drivetrain);
